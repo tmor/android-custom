@@ -1,0 +1,1 @@
+# Lenovo Xiaoxin Pad Pro GT
