@@ -21,7 +21,7 @@
     - ハードウェアID: USB\VID_17EF&PID_7F58&REV_0601
   - adbから繋がらない時の名前: ADB Interface
     - USB接続時のオプションで"充電のみ"にする。ファイル転送ではダメ 
-- powershell.exeを実行。adbから認識しているか確認
+- cmd.exeを実行。adbから認識しているか確認
 ```shell
 adb devices
 
@@ -30,7 +30,7 @@ List of devices attached
 ```
 
 - GooglePlayのapkをダウンロード: [Android 用 Google Play Store APK のダウンロード - 最新バージョン](https://apkpure.net/jp/google-play-store/com.android.vending)
-- `Y700_2023_TB320FC_16.0.336_ja.bat` をエディタで開き、ダウンロードしたapkのファイル名に変更
+- `TB710FU_1.1.04.331_ja.bat` をエディタで開き、ダウンロードしたapkのファイル名に変更
 - GooglePlayのインストール、中国APPの削除、無効化: cmd.exeを開き、batを実行
 ```shell
 Y700_2023_TB320FC_16.0.336_ja.bat
@@ -48,4 +48,5 @@ Y700_2023_TB320FC_16.0.336_ja.bat
 
 - `/system/preinstall` 以下に中国アプリがある。
 - `adb uninstall` できないアプリもあるので、それは `adb pm disable-user` にする。
+
 
