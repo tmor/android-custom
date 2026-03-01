@@ -15,11 +15,12 @@
   - General settings > Developer options > USB debugging: ON
 - adb コマンドを使えるようにする。
   - [Software Fix (Rescue and Smart Assistant) - Lenovo Support JP](https://support.lenovo.com/jp/ja/downloads/ds101291-rescue-and-smart-assistant-lmsa) をインストールするとdriverやadbがセットアップされた。工場出荷時へのリカバリやデータバックアップもできる。
-- PCとAndroid側にをUSBで接続し、Android側に"Allow USB debugging ?"で"Allow"を選択する。これが出ない場合ESETのネットワーク保護等を一時的にOFFにする
+- PCとAndroid側にをUSBで接続し、Android側に"Allow USB debugging ?"で"Allow"を選択する。これが出ない場合、アンチウィルス(ESET等)のネットワーク保護等を一時的にOFFにする
   - デバイスマネージャー上の名前(adbに繋がる場合):
     - フレンドリ名: 联想小新平板Pro GT
     - ハードウェアID: USB\VID_17EF&PID_7F58&REV_0601
   - adbから繋がらない時の名前: ADB Interface
+    - USB接続時のオプションで"充電のみ"にする。ファイル転送ではダメ 
 - powershell.exeを実行。adbから認識しているか確認
 ```shell
 adb devices
@@ -47,3 +48,4 @@ Y700_2023_TB320FC_16.0.336_ja.bat
 
 - `/system/preinstall` 以下に中国アプリがある。
 - `adb uninstall` できないアプリもあるので、それは `adb pm disable-user` にする。
+
