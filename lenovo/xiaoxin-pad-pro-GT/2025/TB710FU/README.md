@@ -33,7 +33,7 @@ List of devices attached
 - `TB710FU_1.1.04.331_ja.bat` をエディタで開き、ダウンロードしたapkのファイル名に変更
 - GooglePlayのインストール、中国APPの削除、無効化: cmd.exeを開き、batを実行
 ```shell
-Y700_2023_TB320FC_16.0.336_ja.bat
+TB710FU_1.1.04.331_ja.bat
 ```
 - あとはGooglePlayにログインし、好きなアプリをインストールする
 
